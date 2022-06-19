@@ -62,6 +62,10 @@
 </head>
 
 <body>
+  <div class="loader-container">
+    <div class="loader" ><span></span></div>
+  </div>
+  
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center ">
@@ -547,7 +551,15 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+<script>
 
+  // Preloder
+  $(window).on("load",function(){
+            $(".loader-container").fadeOut(1000);
+        });
+        
+        // preloder ended
+</script>
 </body>
 
 </html>

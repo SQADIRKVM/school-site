@@ -1077,7 +1077,41 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 # POPUP
 --------------------------------------------------------------*/
 
+/* Preloader */
+.loader-container{
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.loader{
+  width: 50px;
+  height: 50px;
+  border: 5px solid;
+  color: #3498db;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: loader 1.2s linear infinite;
+}
+
+@keyframes loader{
+  25%{
+      color: #2e92cc;
+  }
+  50%{
+      color: #0f71f1;
+  }
+  75%{
+      color: #3cd3e7;
+  }
+  to{
+      transform: rotate(360deg);
+  }
+}
 /*--------------------------------------------------------------
 
 # F.A.Q
